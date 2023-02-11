@@ -1,0 +1,59 @@
+Iac tools ---> 
+
+declarative:
+explicit 
+json,xml,yml
+1. azure blueprints
+2. arm templates
+3. cloudformation template
+4. cloud deployment manager 
+5.terraform 
+
+imperative:
+implicit
+less robost
+programming languages - python, golang, java
+AWS CDK - only aws 
+pulumi - aws, azure, gcp, k8s
+
+
+Terraform : 
+HCL(terraform language)
+loops
+blocks
+locals
+complex data structures 
+
+
+****************Infrastructure lifecycle ********************
+
+day 0: plan and design 
+day 1: develop and iterate 
+day 2: golive and maintain 
+
+
++++++++++++ 1. reliability 
+            2. idempoten
+
+
+provisioning : make a server ready with systems, data and software for operations.. puppet , ansible, chef.
+deployment: aws codepipeline, jenkins
+orchestration: coordinating multiple systems, kubernetes
+
+
+configuration drift:
+configuration change when provisioning 
+detect : aws config, azure policies, gcp secuirty health analytics, aws cloudformation drift detection , terraform state files 
+fix: compliance tools like aws config , terraform refresh and plan commands, manual correction 
+prevent: immutable infrastructure , never delete the server created . instead release a new version 
+
+
+
+mutable and immutable infrastrcuture:
+
+develop---> deploy ----> configure(cloud-init)
+develop----> configure---> deployy 
+
+
+
+
