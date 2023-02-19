@@ -1,0 +1,34 @@
+terraform:
+
+HCL language 
+
+terraform life cycle:
+
+code (config file) -> init (initialise project) -> plan -> validate ( happens automatically) -> execute ( terraform apply) -> terraform destroy 
+
+
+change automation:
+execution plans and resource graphs for change automation 
+
+execution plans: manual review of what will add, changed ir destroyed 
+visulaizing execution plan: graphviz should be installed to visualize the execution plan 
+
+Resource graph : shows the dependency graph. visual representation of states and configurations dependency 
+
+usecases:  supports aws, azure, gcp , multi-tier, for dynamic scheduling for containers , cloud agnostic , cross cloud dependency
+
+core and plugins:
+core -- RPC TO plugins
+pligins - implentation for service or provisioner 
+
+
+Terraform CLI Commands:
+
+Terraform INIT : The first command 
+The terraform init command initializes a working directory containing Terraform configuration files. 
+This is the first command that should be run after writing a new Terraform configuration or cloning an existing one from version control. 
+It is safe to run this command multiple times.
+
+pull the provider and modules that are defiined . 
+
+Terrafom FORMAT:
